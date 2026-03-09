@@ -11,3 +11,18 @@ string Status_lulus(float r){
     else
         return "Gagal";
 }
+
+
+int main(){
+    float nilBI,nilMT,rerata;
+    string status;
+
+    cout <<"Masukan nilai Bahasa Inggris = ";
+    cin >> nilBI;
+    cout <<"Masukan nilai Matematika = ";
+    cin >> nilMT;
+
+    rerata = Rata_rata(nilBI,nilMT);
+
+    cout << "Status kelulusan = "<<Status_lulus(rerata)<<" ,dengan nilai rerata = "<<rerata<<endl;
+}
